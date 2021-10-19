@@ -18,16 +18,12 @@ about:
   enable: true
   image: 'images/profile.jpg'
   title: 'THIS IS ME'
-  content: Hello! My name is Aditi Lapasia.I have joined the MFA 2022 Program and am excited about my journey at **LBS**.
-  
-  I hail from the city of Mumbai, India. On completing my undergraduate degree in *BSc Finance* from [Narsee Monjee Institute of Management Studies](https://commerce.nmims.edu/academics/programs/bsc-finance/) (Mumbai), I moved to Bangalore for a workshop as a participant of the [Young Women in Investment Program](https://www.youngwomenininvestment.com/india) offered by the CFA Institute. 
-This program helped me get my internship with Forex team at *Edelweiss*. I worked with Edelweiss for about 2 years before I decided to apply for my masters at London Business School.
-  
-  If you have any questions feel free to reach out on [LinkedIn, Github, or by email](#contact)!
+  content: Hello! My name is Aditi Lapasia.I have joined the MFA 2022 Program and am excited about my journey at **LBS**. I hail from the city of Mumbai, India. On completing my undergraduate degree in *BSc Finance* from [Narsee Monjee Institute of Management Studies](https://commerce.nmims.edu/academics/programs/bsc-finance/) (Mumbai), I moved to Bangalore for a workshop as a participant of the [Young Women in Investment Program](https://www.youngwomenininvestment.com/india) offered by the CFA Institute. 
+This program helped me get my internship with Forex team at *Edelweiss*. I worked with Edelweiss for about 2 years before I decided to apply for my masters at London Business School. If you have any questions feel free to reach out on [LinkedIn, Github, or by email](#contact)!
   button:
     enable: true
     label: 'DOWNLOAD MY RESUME'
-    link: #file:///C:/Users/aditi/Desktop/LBS/Courses/Term%201/Data%20Analysis%20for%20Finance/Individual%20Project/website/static/AditiLapasia_CV.pdf
+    link: 'images/cv.pdf'
     icon: 'fa-download'
 
 ###########################3 Experience ##############################
