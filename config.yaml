@@ -2,7 +2,7 @@ baseURL: https://aditilapasia-portfolio.netlify.app/
 title: Aditi Lapasia
 theme: port-hugo
 params:
-  author: Burton Guster
+  author: 
   copyright: Copyright Burton Guster &copy;
   description: Personal Portfolio
   favicon: images/favicon.png
@@ -25,13 +25,13 @@ params:
   preloader:
     enable: yes
     preloader: images/preloader.gif
-  social:
+  social: 
     - icon: fab fa-github
-      link: https://github.com/tylerjlawson
+      link: https://github.com/aditilapasia
     - icon: fab fa-linkedin
-      link: https://www.linkedin.com/
+      link: https://www.linkedin.com/aditilapasia
     - icon: fas fa-envelope
-      link: mailto:guster@burton.com
+      link: mailto:alapsia.mfa2022@london.edu
     - contentDir: content/english
       home: Home
       icon: fab fa-medium
