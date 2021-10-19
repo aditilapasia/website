@@ -23,7 +23,7 @@ This program helped me get my internship with Forex team at *Edelweiss*. I worke
   button:
     enable: true
     label: 'DOWNLOAD MY RESUME'
-    link: 'images/cv.pdf'
+    link: #
     icon: 'fa-download'
 
 ###########################3 Experience ##############################
