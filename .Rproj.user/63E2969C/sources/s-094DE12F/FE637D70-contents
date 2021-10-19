@@ -4,7 +4,7 @@ hero:
 
   # animated text loop
   occupations:
-    - 'Masters student at London Business School'
+    - 'Masters student at London Business School!'
     - 'Indian'
 
   # hero background image
@@ -61,17 +61,17 @@ skill:
     - name: 'Advanced Excel'
       percentage: '93%'
 
-    - name: 'Financial Research'
-      percentage: '88%'
-
     - name: 'Data Analysis using R Programming'
       percentage: '76%'
+
+    - name: 'Bloomberg Terminal'
+      percentage: '83%'
 
 ######################### funfacts #############################3
 funfacts:
   enable: false
   funfacts_list:
-    - name: 'CUPS PER DAY'
+    - name: 'CFA Level 1'
       image: 'images/icons/coffee.png'
       count: '2'
 
@@ -90,7 +90,7 @@ portfolio:
   portfolio_list:
     - name: Hugo
       image: 'images/portfolio/hugo.png'
-      link: '/content/Homework 1_Group A8.Rmd'
+      link: '/blog/Homework 1_Group A8.Rmd'
       description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
 
     - name: Hugo Themes
