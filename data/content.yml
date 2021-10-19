@@ -22,7 +22,7 @@ about:
   button:
     enable: true
     label: 'DOWNLOAD MY RESUME'
-    link: 'files/cv.pdf'
+    link: 
     icon: 'fa-download'
 
 ###########################3 Experience ##############################
