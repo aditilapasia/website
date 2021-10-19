@@ -22,7 +22,7 @@ about:
   button:
     enable: true
     label: 'DOWNLOAD MY RESUME'
-    link: https://github.com/aditilapasia/website/blob/main/AditiLapasia_CV.pdf
+    link: 'https://github.com/aditilapasia/website/blob/main/AditiLapasia_CV.pdf'
     icon: 'fa-download'
 
 ###########################3 Experience ##############################
