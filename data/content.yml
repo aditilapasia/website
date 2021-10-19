@@ -16,7 +16,7 @@ hero:
 ########################### About ##################################
 about:
   enable: true
-  image: 'iC:\Users\aditi\Desktop\Headshot- Aditi Lapasia.jpg'
+  image: 'images/profile.jpg'
   title: 'THIS IS ME'
   content: Hi, thank you for taking a look around my site. If you have any questions feel free to reach out on [LinkedIn, Github, or by email](#contact)!
   button:
