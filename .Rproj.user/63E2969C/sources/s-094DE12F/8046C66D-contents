@@ -1,8 +1,8 @@
 baseURL: https://aditilapasia-portfolio.netlify.app/
-title: Port Hugo
-theme: port-hugo
+title: Aditi Lapasia
+theme: Portfolio Website for Aditi Lapasia
 params:
-  author: Burton Guster
+  author: Aditi Lapasia
   copyright: Copyright Burton Guster &copy;
   description: Personal Portfolio
   favicon: images/favicon.png
