@@ -4,9 +4,8 @@ hero:
 
   # animated text loop
   occupations:
-    - 'Student at London Business School'
-    - 'Pharmaceutical Salesman'
-    - 'Private Detective'
+    - 'Masters student at London Business School'
+    - 'Indian'
 
   # hero background image
   bg_image: 'images/background.jpg'
@@ -33,19 +32,22 @@ experience:
     - name: Solutions Associate
       company: Edelweiss Wealth Management, India
       duration: '2020-2021'
-      content: I make websites.
+      content:
 
     - name: Sales and Advisory Intern
       company: Edelweiss Wealth Management, India
       duration: '2019'
+      content:
 
     - name: Private Equity Intern
       company: Rare Enterprises, India
       duration: '2018'
+      content:
 
     - name: Equity Research Intern
-      company: Crest Capital and Investment
+      company: Crest Capital and Investment, India
       duration: '2017' 
+      content:
 
 ############################### Skill #################################
 skill:
@@ -67,7 +69,7 @@ skill:
 
 ######################### funfacts #############################3
 funfacts:
-  enable: true
+  enable: false
   funfacts_list:
     - name: 'CUPS PER DAY'
       image: 'images/icons/coffee.png'
@@ -84,16 +86,16 @@ funfacts:
 ############################# portfolio ################################
 portfolio:
   enable: true
-  title: 'MY WORK'
+  title: 'MY PORTFOLIO'
   portfolio_list:
     - name: Hugo
       image: 'images/portfolio/hugo.png'
-      link: '/blog/Homework 1_Group A8.Rmd'
+      link: '/content/Homework 1_Group A8.Rmd'
       description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
 
     - name: Hugo Themes
       image: 'images/portfolio/hugothemes.png'
-      link: 'blog/Homework-1_Group A8.html'
+      url: https://gohugo.io
       description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
 
     - name: Just A Design
