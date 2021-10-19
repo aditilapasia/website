@@ -29,7 +29,7 @@ params:
     - icon: fab fa-github
       link: https://github.com/aditilapasia
     - icon: fab fa-linkedin
-      link: www.linkedin.com/in/aditilapasia
+      link: https://www.linkedin.com/in/aditilapasia
     - icon: fas fa-envelope
       link: mailto:alapsia.mfa2022@london.edu
     - contentDir: content/english

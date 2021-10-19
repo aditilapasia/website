@@ -51,17 +51,17 @@ skill:
   title: 'SOME SKILLS'
   showpercent: false
   skill_list:
-    - name: 'React'
+    - name: 'Financial Modelling'
       percentage: '85%'
 
-    - name: 'Detecting'
+    - name: 'Advanced Excel'
       percentage: '93%'
 
-    - name: 'Selling'
-      percentage: '25%'
+    - name: 'Financial Research'
+      percentage: '88%'
 
-    - name: 'Yelling'
-      percentage: '100%'
+    - name: 'Data Analysis using R Programming'
+      percentage: '76%'
 
 ######################### funfacts #############################3
 funfacts:

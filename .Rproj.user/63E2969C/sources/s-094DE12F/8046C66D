@@ -3,7 +3,7 @@
     "path": "C:/Users/aditi/Desktop/LBS/Courses/Term 1/Data Analysis for Finance/Individual Project/website/config.yaml",
     "project_path": "config.yaml",
     "type": "yaml",
-    "hash": "2169610003",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1634676813801.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "35,16",
-        "scrollLine": "22"
+        "cursorPosition": "26,10",
+        "scrollLine": "13"
     },
     "folds": "",
-    "lastKnownWriteTime": 1634679366,
+    "lastKnownWriteTime": 1634680797,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1634679366623,
+    "last_content_update": 1634680797428,
     "read_only": false,
     "read_only_alternatives": []
 }
