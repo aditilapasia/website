@@ -32,20 +32,20 @@ experience:
   experience_list:
     - name: Solutions Associate
       company: Edelweiss Wealth Management, India
-      duration: 'January 2020-June 2021'
+      duration: '2020-2021'
       content: I make websites.
 
     - name: Sales and Advisory Intern
       company: Edelweiss Wealth Management, India
-      duration: 'July 2019-December 2019'
+      duration: '2019'
 
     - name: Private Equity Intern
       company: Rare Enterprises, India
-      duration: 'May 2018-June 2018'
+      duration: '2018'
 
     - name: Equity Research Intern
       company: Crest Capital and Investment
-      duration: '2012-2018' 
+      duration: '2017' 
 
 ############################### Skill #################################
 skill:
@@ -88,7 +88,7 @@ portfolio:
   portfolio_list:
     - name: Hugo
       image: 'images/portfolio/hugo.png'
-      url: https://gohugo.io
+      url: 'content/Homework 1_Group A8.Rmd'
       description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
 
     - name: Hugo Themes
