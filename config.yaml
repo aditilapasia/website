@@ -6,7 +6,7 @@ params:
   copyright: Copyright Burton Guster &copy;
   description: Personal Portfolio
   favicon: images/favicon.png
-  google_analytics: G-ABCDEFG123
+  google_analytics: ''
   logo_dark: images/logo-dark.svg
   logo_light: images/logo.svg
   plugins:
