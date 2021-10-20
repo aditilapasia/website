@@ -5,10 +5,10 @@ params:
   author: 
   copyright: Copyright Burton Guster &copy;
   description: Personal Portfolio
-  favicon: images/favicon.png
+  #favicon: images/favicon.png
   google_analytics: ''
-  logo_dark: images/logo-dark.svg
-  logo_light: images/logo.svg
+  #logo_dark: images/logo-dark.svg
+  #logo_light: images/logo.svg
   plugins:
     css:
       - link: https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
@@ -26,10 +26,10 @@ params:
     enable: yes
     preloader: images/preloader.gif
   social: 
-    - icon: fab fa-github
-      link: https://github.com/aditilapasia
     - icon: fab fa-linkedin
       link: https://www.linkedin.com/in/aditilapasia
+    - icon: fab fa-github
+      link: https://github.com/aditilapasia
     - icon: fas fa-envelope
       link: mailto:alapsia.mfa2022@london.edu
     - contentDir: content/english

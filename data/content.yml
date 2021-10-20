@@ -55,7 +55,7 @@ skill:
   showpercent: false
   skill_list:
     - name: 'Financial Modelling'
-      percentage: '85%'
+      percentage: '88%'
 
     - name: 'Advanced Excel'
       percentage: '100%'
