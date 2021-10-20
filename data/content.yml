@@ -87,15 +87,14 @@ portfolio:
   enable: true
   title: 'MY PORTFOLIO'
   portfolio_list:
-    - name: Hugo
-      image: 'images/portfolio/hugo.png'
-      url: '/blog/blog1.html'
-      icon: 'fa-download'
+    - name: Change in the US Treasury Yield Curve over time
+      image: 'images/portfolio/graph.png'
+      url: '/blog/blog-2.html'
       description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
 
-    - name: Hugo Themes
-      image: 'images/portfolio/hugothemes.png'
-      url: https://gohugo.io
+    - name: How has the CPI and its components changed over the last few years?
+      image: 'images/portfolio/graph2.png'
+      url: '/blog/blog1.html'
       description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
 
     - name: Just A Design
