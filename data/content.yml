@@ -90,7 +90,7 @@ portfolio:
     - name: 'Analysing the UST Yield Curve'
       image: 'images/portfolio/graph.png'
       url: '/blog/blog-2.html'
-      description:
+      description: 'The Yield Curve (YC) is defined as the difference (spread) between the yield on 10-year T-Bonds and yield on 3-month (or 1-year) T-Bonds. In simpler terms, YC depicts a relationship between short-term and long-term rates of most safe financial securities: Treasury Bonds. During the last 60 years, it has been interesting that mostly all times that YC inverted (negative spread), after 12-24 months, a recession began in the US (except for one occasion). The graph shows that after a period of inverted YC (red colour), a recession (shadow area) followed (except in the 1960s). Nevertheless, the inverted Yield Curve cannot predict with certainty if it would occur a recession and the depth of the recession. For instance, the 2020 Recession was caused by COVID 19 Pandemic. Nevertheless, the graph shows that there was an inverted YC before the 2020 recession. Therefore, one must be careful when concluding economic phenomena just based on a chart.'
 
     - name: How has the CPI and its components changed over the last few years?
       image: 'images/portfolio/graph2.png'
