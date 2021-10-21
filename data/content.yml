@@ -90,7 +90,7 @@ portfolio:
     - name: 'Analysing the UST Yield Curve'
       image: 'images/portfolio/2.png'
       url: '/blog/blog1.html'
-      description: 'During the last 60 years, interestingly, mostly every time the Yield Curve (YC) inverted (negative spread), after 12-24 months, a recession began in the US (except for one occasion). The graph shows that after a period of inverted YC (red colour), a recession (shadow area) followed (except in the 1960s). Nevertheless, the inverted Yield Curve cannot predict with certainty if it would occur a recession and the depth of the recession.'
+      description: 'During the last 60 years, interestingly, almost every time the Yield Curve (YC) inverted (negative spread), after 12-24 months, a recession began in the US (except for one occasion). The graph shows that after a period of inverted YC (red colour), a recession (shadow area) followed (except in the 1960s). Nevertheless, the inverted Yield Curve cannot predict with certainty if it would occur a recession and the depth of the recession.'
 
     - name: 'Trends in CPI and its components'
       image: 'images/portfolio/4.jpg'
