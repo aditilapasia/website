@@ -16,7 +16,8 @@ about:
   enable: true
   image: 'images/profile.jpg'
   title: 'THIS IS ME'
-  content: Hi, thank you for taking a look around my site. If you have any questions feel free to reach out on [LinkedIn, Github, or by email](#contact)!
+  content: I was born and raised in Mumbai, India, where I also completed my undergraduate degree in finance at Narsee Monjee Institute of Management Studies. In pursuit of experiential learning opportunities during summer breaks, I completed internships in equity research and private equity. Prior to LBS, I worked as a currency risk consultant at a financial services firm in India. 
+  If you have any questions feel free to reach out on [LinkedIn or by email](#contact)!
   button:
     enable: true
     label: 'DOWNLOAD MY RESUME'
@@ -90,13 +91,11 @@ portfolio:
     - name: 'Analysing the UST Yield Curve'
       image: 'images/portfolio/graph.png'
       url: '/blog/blog-2.html'
-      description: 'The Yield Curve (YC) is defined as the difference (spread) between the yield on 10-year T-Bonds and yield on 3-month (or 1-year) T-Bonds. In simpler terms, YC depicts a relationship between short-term and long-term rates of most safe financial securities: Treasury Bonds. During the last 60 years, it has been interesting that mostly all times that YC inverted (negative spread), after 12-24 months, a recession began in the US (except for one occasion). The graph shows that after a period of inverted YC (red colour), a recession (shadow area) followed (except in the 1960s). Nevertheless, the inverted Yield Curve cannot predict with certainty if it would occur a recession and the depth of the recession. For instance, the 2020 Recession was caused by COVID 19 Pandemic. Nevertheless, the graph shows that there was an inverted YC before the 2020 recession. Therefore, one must be careful when concluding economic phenomena just based on a chart.'
+      description: 'During the last 60 years, it has been interesting that mostly all times that YC inverted (negative spread), after 12-24 months, a recession began in the US (except for one occasion). The graph shows that after a period of inverted YC (red colour), a recession (shadow area) followed (except in the 1960s). Nevertheless, the inverted Yield Curve cannot predict with certainty if it would occur a recession and the depth of the recession.'
 
-    - name: How has the CPI and its components changed over the last few years?
+    - name: Trends in CPI and its components
       image: 'images/portfolio/graph2.png'
       url: '/blog/blog1.html'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
-
-    - name: Just A Design
-      image: 'images/portfolio/design.png'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      description: 'Given the current post-pandemic economy, many investors and businesses, in general, are very concerned with how inflation will impact the global economy. Although there is no consensus on how inflation will progress, some argue that the current uncontrolled inflation, that can be observed in most U.S. CPI components such as Food and Beverages, Apparel and Recreation.'
+      
+      

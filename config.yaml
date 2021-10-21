@@ -3,7 +3,7 @@ title: Aditi Lapasia
 theme: port-hugo
 params:
   author: 
-  copyright: Copyright Burton Guster &copy;
+  copyright:
   description: Personal Portfolio
   favicon: images/favicon.png
   google_analytics: ''
