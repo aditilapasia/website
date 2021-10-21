@@ -1,0 +1,194 @@
+---
+title: " Tfl Bike Rentals"
+author: "Aditi Lapasia, Diego Alfaro Legonia, Edgar Pon, Ivy Liu, Teen Ho Nicholas Ching, Roberto Keaney, Susan Wang"
+output:
+  html_document:
+    theme: flatly
+    highlight: zenburn
+    number_sections: yes
+    toc: yes
+    toc_float: yes
+    code_folding: show
+---
+
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+options(digits = 3)
+
+# default figure size
+knitr::opts_chunk$set(
+  fig.width=6.75, 
+  fig.height=6.75,
+  fig.align = "center"
+)
+```
+
+```{r load-libraries, include=FALSE}
+library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
+library(mosaic)
+library(ggthemes)
+library(lubridate)
+library(here)
+library(skimr)
+library(janitor)
+library(httr)
+library(readxl)
+library(vroom)
+library(R.utils)
+library(readr)
+library(ggtext)
+library(scales)
+```
+
+# Excess rentals in TfL bike sharing
+
+ We can get the latest data how many bikes were hired every single day by running the following code:
+
+```{r, get_tfl_data, cache=TRUE}
+url <- "https://data.london.gov.uk/download/number-bicycle-hires/ac29363e-e0cb-47cc-a97a-e216d900a6b0/tfl-daily-cycle-hires.xlsx"
+
+# Download TFL data to temporary file
+httr::GET(url, write_disk(bike.temp <- tempfile(fileext = ".xlsx")))
+
+# Use read_excel to read it as dataframe
+bike0 <- read_excel(bike.temp,
+                   sheet = "Data",
+                   range = cell_cols("A:B"))
+
+# change dates to get year, month, and week
+bike <- bike0 %>% 
+        clean_names() %>% 
+        rename (bikes_hired = number_of_bicycle_hires) %>% 
+        mutate (year = year(day),
+                month = lubridate::month(day, label = TRUE),
+                week = isoweek(day))
+
+bike
+```
+We can easily create a facet grid that plots bikes hired by month and year.
+
+```{r tfl_month_year_grid, echo=FALSE, out.width="100%"}
+knitr::include_graphics(here::here("images", "tfl_distributions_monthly.png"), error = FALSE)
+```
+
+**Look at May and Jun and compare 2020 with the previous years. What's happening?**
+
+As expected, the number of bikes hired per month very much depends on the season and the weather. For instance, in the months November, December, January, and February, the distribution of hikes hired per month tends to be relatively low. However, in summer months such as June, July, August, the average number of bikes hired per month is at its highest.
+
+This is not exactly the same in 2020, especially in May and June, as the UK was still in lockdown and with many working from home, there were not as many people hiring bikes in these months. 
+
+```{r, monthly data table for Tfl bike rentals}
+
+monthly_data <- bike %>% 
+                group_by(month, year) %>% 
+                summarise(actual_rentals = mean(bikes_hired))
+
+expected_rentals_month <- monthly_data %>% 
+                          group_by(month) %>%
+                          filter(year %in% c(2016,2017, 2018, 2019)) %>% 
+                          summarise(expected_rentals = mean(actual_rentals))
+
+bike_new <- merge(monthly_data, expected_rentals_month)
+
+actual_df <- bike_new %>% 
+            filter(year %in% c(2016, 2017, 2018, 2019, 2020, 2021)) %>% 
+            mutate(up = ifelse(actual_rentals>expected_rentals, actual_rentals,expected_rentals),
+            down = ifelse(actual_rentals<expected_rentals, actual_rentals,expected_rentals))
+
+```
+
+```{r month_plot, fig.width= 12}
+
+month_plot <- ggplot(actual_df, aes(x=month, y= actual_rentals, group = 1)) +
+              geom_line(color = "black") +
+              facet_wrap(~year) +
+              geom_line(aes(x= month, y= expected_rentals, group = 1), color= "blue", size=1) +
+              geom_ribbon(aes(ymin=expected_rentals,ymax=down),fill="#CB454A",alpha=0.4)+
+              geom_ribbon(aes(ymin=up,ymax=expected_rentals),fill="#7DCD85",alpha=0.4)  +            
+              theme_bw()+
+              labs(title = "Monthly changes in TfL bike rentals",
+                  subtitle = "Change from monthly average shown in blue
+and calculated between 2016-2019",
+                  x =" ",
+                  y = "Bike rentals",
+                  caption = "Source: TfL, London Data Store") +
+              theme(legend.position= "none", plot.caption = element_text(hjust=1), panel.border = element_blank())+
+              theme(strip.background = element_blank()) +
+              theme(axis.text = element_text(size =10)) +
+              NULL
+
+month_plot
+
+```
+
+**Comment:**
+
+Through this graph, we can see the strong seasonality in TfL bike rentals. The peak always comes in the summer and the rentals are always lowest around the turn of the year, i.e. in November, December, January and February. The above average demand for bikes in 2018 and 2020 can be explained by the following reasons: (1) 2018 was the UK's warmest summer since 2006 and the sunniest since 1995 which meant that more people were wanting to rent bikes than on average; and (2) Summer 2020 coincided with a release of lockdown which meant that many more people were willing to go out and rent bikes. 
+
+```{r, weekly data table for Tfl bike rentals}
+
+weekly_data <- bike %>% 
+               group_by(week, year) %>% 
+               summarise(total_bikes_hired_week = mean(bikes_hired))
+  
+expected_rentals_week<- weekly_data %>% 
+                        group_by(week) %>% 
+                        filter(year %in% c(2016,2017, 2018, 2019)) %>% 
+                        summarise(expected_rentals_weekly = mean(total_bikes_hired_week))
+
+bike_week <- merge(weekly_data, expected_rentals_week)
+
+week_df <- bike_week %>% 
+           filter(year %in% c(2016, 2017, 2018, 2019, 2020, 2021)) %>% 
+           mutate(excess_rentals_week = total_bikes_hired_week - expected_rentals_weekly,
+                  expected_rentals_week_change = excess_rentals_week/expected_rentals_weekly,
+                  up_week = ifelse(expected_rentals_week_change>0, expected_rentals_week_change,0),
+                  down_week = ifelse(expected_rentals_week_change<0, expected_rentals_week_change,0),
+                  color_id = if_else(expected_rentals_week_change>0,"Green","Red")) %>% 
+          head(-1)
+
+```
+
+```{r week_plot, fig.width= 12}
+
+library(plotly)
+
+week_plot <- ggplot(week_df, aes(x=week, y= expected_rentals_week_change, group = 1)) +
+             geom_rect(aes(xmin=14,xmax=26, ymin= -0.6, ymax= 1.1), fill= "grey95", alpha=0.8)+
+             geom_rect(aes(xmin=40,xmax=53, ymin= -0.6, ymax= 1.1), fill= "grey95", alpha=0.8)+
+             geom_line(color = "black") +
+             geom_ribbon(aes(ymin=0,ymax=down_week),fill="#CB454A",alpha=0.4) +
+             geom_ribbon(aes(ymin=up_week,ymax=0),fill="#7DCD85",alpha=0.4)  +
+             facet_wrap(~year) +
+             theme_bw()+
+             labs(title = "Weekly changes in TfL bike rentals",
+                  subtitle = "% change from weekly average
+calculated between 2016-2019",
+                  x ="Week",
+                  y = " ",
+                  caption = "Source: TfL, London Data Store") +
+            theme(legend.position= "none", plot.caption = element_text(hjust=1), panel.border = element_blank())+
+            theme(strip.background = element_blank()) +
+            scale_x_continuous(breaks = c(13, 26,39, 53), limits= c(0,53)) +
+            scale_y_continuous(breaks = seq (-0.5, 1, by = 0.5), labels= scales::percent_format(accuracy=1)) +
+            geom_rug(mapping = aes(color = color_id), sides= "b")+
+            scale_color_manual(values = c("#7DCD85","#CB454A")) +
+            NULL
+            
+
+week_plot
+
+```
+
+
+**Comment:**
+
+In these graphs, we can see a more granular view of changes in bike rentals. As seen in the graphs above, there is a lot of positive weekly changes in the summers of 2018, 2020 and 2021. However, with this data, we can see that the spike is much higher in 2020 and 2021 with the release of lockdown restrictions than in 2018 when people rented more bikes simply because the weather was better that summer. 
+
+**Should you use the mean or the median to calculate your expected rentals? Why?**
+
+We should use the mean to calculate our expected rentals because the mean is generally used for data sets which are more roughly normally distributed, whereas the median is good for datasets with many outliers. Although there are some outliers in our data, there are not enough to suggest using the median instead of the mean.
