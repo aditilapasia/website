@@ -7,7 +7,7 @@ hero:
     - 'Masters student at London Business School!'
 
   # hero background image
-  bg_image: 'images/bg.jpeg'
+  bg_image: 'images/bg1.jpeg'
   # optional mobile breakpoint background
   mobile_bg_image: 'images/background.jpg'
 
@@ -88,16 +88,16 @@ portfolio:
   title: 'MY PORTFOLIO'
   portfolio_list:
     - name: 'Analysing the UST Yield Curve'
-      image: 'images/portfolio/graph.png'
+      image: 'images/portfolio/2.png'
       url: '/blog/blog1.html'
       description: 'During the last 60 years, it has been interesting that mostly all times that YC inverted (negative spread), after 12-24 months, a recession began in the US (except for one occasion). The graph shows that after a period of inverted YC (red colour), a recession (shadow area) followed (except in the 1960s). Nevertheless, the inverted Yield Curve cannot predict with certainty if it would occur a recession and the depth of the recession.'
 
     - name: 'Trends in CPI and its components'
-      image: 'images/portfolio/graph2.png'
+      image: 'images/portfolio/4.jpg'
       url: '/blog/blog2.html'
       description: 'Given the current post-pandemic economy, many investors and businesses, in general, are very concerned with how inflation will impact the global economy. Although there is no consensus on how inflation will progress, some argue that the current uncontrolled inflation, that can be observed in most U.S. CPI components such as Food and Beverages, Apparel and Recreation.'
   
-    - name: 'Tfl Bike Rentals'
-      image: 'images/portfolio/graph2.png'
+    - name: 'TfL Bike Rentals'
+      image: 'images/portfolio/1.jpg'
       url: '/blog/blog3.html'
       description: 'We can see the strong seasonality in TfL bike rentals. The peak always comes in the summer and the rentals are always lowest around the turn of the year, i.e. in November, December, January and February. Read the detailed analysis for reasons behind the above average demand for bikes in 2018 and 2020.'
