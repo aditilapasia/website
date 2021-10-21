@@ -16,7 +16,7 @@ about:
   enable: true
   image: 'images/profile.jpg'
   title: 'THIS IS ME'
-  content: 'I was born and raised in Mumbai, India, where I also completed my undergraduate degree in finance at Narsee Monjee Institute of Management Studies. In pursuit of experiential learning opportunities during summer breaks, I completed internships in equity research and private equity. Prior to LBS, I worked as a currency risk consultant at a financial services firm in India. If you have any questions feel free to reach out on [LinkedIn or by email](#contact)!'
+  content: 'I was born and raised in Mumbai, India, where I also completed my undergraduate degree in finance at Narsee Monjee Institute of Management Studies. In pursuit of experiential learning opportunities during summer breaks, I completed internships in equity research and private equity. Prior to LBS, I worked as a currency risk consultant at a financial services firm in India. If you have any questions, feel free to reach out to me on [LinkedIn or by email](#contact)!'
   button:
     enable: true
     label: 'DOWNLOAD MY RESUME'
@@ -100,4 +100,4 @@ portfolio:
     - name: 'TfL Bike Rentals'
       image: 'images/portfolio/1.jpg'
       url: '/blog/blog3.html'
-      description: 'We can see the strong seasonality in TfL bike rentals. The peak always comes in the summer and the rentals are always lowest around the turn of the year, i.e. in November, December, January and February. Read the detailed analysis for reasons behind the above average demand for bikes in 2018 and 2020.'
+      description: 'We can see the strong seasonality in TfL bike rentals. The peak always comes in the summer and the rentals are always lowest around the turn of the year, i.e. in November, December, January and February. Read the detailed analysis to find out why the demand for bikes was above average in 2018 and 2020.'
