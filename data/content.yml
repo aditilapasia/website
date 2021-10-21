@@ -7,7 +7,7 @@ hero:
     - 'Masters student at London Business School!'
 
   # hero background image
-  bg_image: 'images/bg.jpg'
+  bg_image: 'images/bg.jpeg'
   # optional mobile breakpoint background
   mobile_bg_image: 'images/background.jpg'
 
