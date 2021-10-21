@@ -90,12 +90,12 @@ portfolio:
     - name: 'Analysing the UST Yield Curve'
       image: 'images/portfolio/2.png'
       url: '/blog/blog1.html'
-      description: 'During the last 60 years, it has been interesting that mostly all times that YC inverted (negative spread), after 12-24 months, a recession began in the US (except for one occasion). The graph shows that after a period of inverted YC (red colour), a recession (shadow area) followed (except in the 1960s). Nevertheless, the inverted Yield Curve cannot predict with certainty if it would occur a recession and the depth of the recession.'
+      description: 'During the last 60 years, interestingly, mostly every time the Yield Curve (YC) inverted (negative spread), after 12-24 months, a recession began in the US (except for one occasion). The graph shows that after a period of inverted YC (red colour), a recession (shadow area) followed (except in the 1960s). Nevertheless, the inverted Yield Curve cannot predict with certainty if it would occur a recession and the depth of the recession.'
 
     - name: 'Trends in CPI and its components'
       image: 'images/portfolio/4.jpg'
       url: '/blog/blog2.html'
-      description: 'Given the current post-pandemic economy, many investors and businesses, in general, are very concerned with how inflation will impact the global economy. Although there is no consensus on how inflation will progress, some argue that the current uncontrolled inflation, that can be observed in most U.S. CPI components such as Food and Beverages, Apparel and Recreation.'
+      description: 'Given the current post-pandemic economy, many investors and businesses, in general, are very concerned with how inflation will impact the global economy. Although there is no consensus on how inflation will progress, some argue that the current uncontrolled inflation, that can be observed in most U.S. CPI components such as Food and Beverages, Apparel and Recreation, is due to a mismatch in supply and demand caused by the global pandemic and the unexpected increase in demand, particularly from the United States.'
   
     - name: 'TfL Bike Rentals'
       image: 'images/portfolio/1.jpg'

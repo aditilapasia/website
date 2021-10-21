@@ -145,7 +145,7 @@ major_category_plot
 
 **Comment:**
 
-Given the current post-pandemic economy, many investors and businesses, in general, are very concerned with how inflation will impact the global economy. Although there is no consensus on how inflation will progress, some argue that the current uncontrolled inflation, that can be observed in most U.S. CPI components such as Food and Beverages, Apparel and Recreation. These components have yearly percent change considerably higher than in prior years is due to a mismatch in supply and demand caused by the global pandemic and the unexpected increase in demand, particularly from the United States. Also, these components are known to be quite cyclical, and given the current economic recovery, it’s normal to assume they will suffer higher inflation.
+Given the current post-pandemic economy, many investors and businesses, in general, are very concerned with how inflation will impact the global economy. Although there is no consensus on how inflation will progress, some argue that the current uncontrolled inflation, that can be observed in most U.S. CPI components such as Food and Beverages, Apparel and Recreation, is due to a mismatch in supply and demand caused by the global pandemic and the unexpected increase in demand, particularly from the United States. Also, these components are known to be quite cyclical, and given the current economic recovery, it’s normal to assume they will suffer higher inflation.
 
 On the other hand, Housing is still growing at a strong pace (c. 2.5%) due to low mortgage rates and rising wages, but at a slower pace compared to other components. This easing is due to the future economic uncertainty, and the increase in the supply of housing.
 
