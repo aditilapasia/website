@@ -16,8 +16,7 @@ about:
   enable: true
   image: 'images/profile.jpg'
   title: 'THIS IS ME'
-  content: I was born and raised in Mumbai, India, where I also completed my undergraduate degree in finance at Narsee Monjee Institute of Management Studies. In pursuit of experiential learning opportunities during summer breaks, I completed internships in equity research and private equity. Prior to LBS, I worked as a currency risk consultant at a financial services firm in India. 
-  If you have any questions feel free to reach out on [LinkedIn or by email](#contact)!
+  content: 'I was born and raised in Mumbai, India, where I also completed my undergraduate degree in finance at Narsee Monjee Institute of Management Studies. In pursuit of experiential learning opportunities during summer breaks, I completed internships in equity research and private equity. Prior to LBS, I worked as a currency risk consultant at a financial services firm in India. If you have any questions feel free to reach out on [LinkedIn or by email](#contact)!'
   button:
     enable: true
     label: 'DOWNLOAD MY RESUME'
