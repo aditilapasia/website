@@ -9,7 +9,7 @@ hero:
   # hero background image
   bg_image: 'images/bg1.jpeg'
   # optional mobile breakpoint background
-  mobile_bg_image: 'images/background.jpg'
+  mobile_bg_image: 'images/bg1.jpeg'
 
 ########################### About ##################################
 about:
@@ -64,7 +64,7 @@ skill:
       percentage: '70%'
 
     - name: 'Bloomberg Terminal'
-      percentage: '80%'
+      percentage: '84%'
 
 ######################### funfacts #############################3
 funfacts:
